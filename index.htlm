@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drakar och Svärd</title>
+<style>
+body{
+background:#111;
+color:#fff;
+text-align:center;
+font-family:Arial,sans-serif;
+}
+h1{
+color:gold;
+}
+button{
+padding:10px 20px;
+font-size:18px;
+background:darkred;
+color:white;
+border:none;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+ 
+<h1>🐉 Drakar och Svärd ⚔️</h1>
+<p>Klicka för att gå på äventyr!</p>
+ 
+<button onclick="aventyr()">Äventyr</button>
+ 
+<p id="resultat"></p>
+ 
+<script>
+function aventyr() {
+const saker = [
+"🐉 Du mötte en eldsprutande drake!",
+"⚔️ Du hittade ett magiskt svärd!",
+"🏰 Du fann ett gammalt slott!",
+"💎 Du upptäckte en skatt!",
+"🛡️ Du fick en legendarisk sköld!"
+];
+ 
+document.getElementById("resultat").innerHTML =
+saker[Math.floor(Math.random() * saker.length)];
+}
+</script>
+ 
+</body>
+</html>
+Ge feedback om BizChat
